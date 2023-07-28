@@ -1,0 +1,81 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+s 1 -> p 1 <
+s 0 -> p 0 <
+
+p _ -> z # <
+
+z _ -> n * >
+
+n 1 -> n 1 >
+n 0 -> n 0 >
+n + -> n + >
+n # -> n # >
+n * -> n * >
+n _ -> k _ <
+
+k 0 -> zero _ <
+k 1 -> one _ <
+k + -> m _ <
+k * -> f _ <
+k # -> f _ <
+
+m # -> m _ <
+m 1 -> writeOne _ <
+m 0 -> writeZero _ <
+m * -> f _ <
+
+f 1 -> f 1 <
+f 0 -> f 0 <
+f * -> f _ <
+f _ -> ac _ >
+
+zero 0 -> zero 0 <
+zero 1 -> zero 1 <
+zero + -> addZero + <
+zero # -> writeZero # <
+zero * -> writeZero * <
+
+one 0 -> one 0 <
+one 1 -> one 1 <
+one + -> addOne + <
+one # -> writeOne # <
+one * -> writeOne * <
+
+addZero # -> addZero # <
+addZero * -> writeZero * <
+addZero 0 -> writeZero # <
+addZero 1 -> writeOne # <
+
+addOne # -> addOne # <
+addOne * -> writeOne * <
+addOne 0 -> writeOne # <
+addOne 1 -> addRank # <
+
+addRank 0 -> writeZero 1 <
+addRank 1 -> addRank 0 <
+addRank # -> writeZero 1 <
+addRank * -> rank * >
+
+writeOne 1 -> writeOne 1 <
+writeOne 0 -> writeOne 0 <
+writeOne # -> writeOne # <
+writeOne * -> writeOne * <
+writeOne _ -> n 1 >
+
+writeZero 1 -> writeZero 1 <
+writeZero 0 -> writeZero 0 <
+writeZero # -> writeZero # <
+writeZero * -> writeZero * <
+writeZero _ -> n 0 >
+
+writeTen 1 -> writeTen 1 <
+writeTen 0 -> writeTen 0 <
+writeTen # -> writeTen # <
+writeTen * -> writeTen * <
+writeTen _ -> writeOne 0 >
+
+rank # -> writeZero 1 <
+rank 1 -> writeZero 1 <

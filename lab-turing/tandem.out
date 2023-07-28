@@ -1,0 +1,49 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s 0 -> forward * >
+s 1 -> forward # >
+s * -> step * <
+s # -> step # <
+
+forward 0 -> forward 0 >
+forward 1 -> forward 1 >
+forward * -> step * <
+forward # -> step # <
+forward _ -> step _ <
+
+step 0 -> back * <
+step 1 -> back # <
+step ! -> step ! <
+step * -> zero ! >
+step # -> one ! >
+step _ -> ac _ >
+
+back 0 -> back 0 <
+back 1 -> back 1 <
+back * -> s * >
+back # -> s # >
+
+zero * -> zero * >
+zero # -> zero # >
+zero ! -> zero ! >
+zero _ -> isZero _ <
+
+one * -> one * >
+one # -> one # >
+one ! -> one ! >
+one _ -> isOne _ <
+
+isZero # -> rj _ <
+isZero ! -> rj _ <
+isZero * -> backMark _ <
+
+isOne * -> rj _ <
+isOne ! -> rj _ <
+isOne # -> backMark _ <
+
+backMark # -> backMark # <
+backMark * -> backMark * <
+backMark ! -> step ! <

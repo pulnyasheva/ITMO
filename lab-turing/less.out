@@ -1,0 +1,63 @@
+start: s
+accept: ac
+reject: rj
+blank: _
+
+s 0 -> forward 0 >
+s 1 -> forward 1 >
+
+forward 0 -> forward 0 >
+forward 1 -> forward 1 >
+forward * -> forward * >
+forward # -> forward # >
+forward $ -> forward $ >
+forward < -> forward < >
+forward _ -> number _ <
+
+number 0 -> zero _ <
+number 1 -> one _ <
+number < -> equal _ <
+
+zero 0 -> zero 0 <
+zero 1 -> zero 1 <
+zero < -> compZero < <
+
+one 0 -> one 0 <
+one 1 -> one 1 <
+one < -> compOne < <
+
+compZero 1 -> forward $ >
+compZero 0 -> forward # >
+compZero * -> compZero * <
+compZero # -> compZero # <
+compZero $ -> compZero $ <
+compZero _ -> ac _ ^
+
+compOne 0 -> forward * >
+compOne 1 -> forward # >
+compOne * -> compOne * <
+compOne # -> compOne # <
+compOne $ -> compOne $ <
+compOne _ -> ac _ ^
+
+equal # -> equal # <
+equal _ -> rj _ ^
+equal * -> less * <
+equal $ -> more $ <
+equal 1 -> rj _ ^
+equal 0 -> rj _ ^
+
+less * -> less * <
+less # -> less # <
+less $ -> more $ <
+less 1 -> rj _ ^
+less 0 -> rj _ ^
+less _ -> ac _ ^
+
+more * -> less * <
+more # -> more # <
+more $ -> more $ <
+more 1 -> rj _ ^
+more 0 -> rj _ ^
+more _ -> rj _ ^
+
