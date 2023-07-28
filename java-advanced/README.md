@@ -65,7 +65,7 @@
    * Проверяется исходный код задания.
    * Весь код должен находиться в пакете `info.kgeorgiy.ja.фамилия.walk`.
 
-### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/walk)
+### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/walk/Walk.java)
 
 ## Домашнее задание 2. ArraySortedSet
 
@@ -76,7 +76,7 @@
     * Применение стандартных коллекций.
     * Избавление от повторяющегося кода.
 
-### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/arrayset)
+### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/arrayset/Arrayset.java)
 
 ## Домашнее задание 3. Студенты
 
@@ -87,7 +87,7 @@
    * Применение лямбда-выражений и потоков.
    * Избавление от повторяющегося кода.
 
-### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/student)
+### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/student/StudentDB.java)
 
 ## Домашнее задание 4. Implementor
 
@@ -102,7 +102,7 @@
    * _Сложный_ — `Implementor` должен уметь реализовывать и классы, и интерфейсы. Поддержка _generics_ не требуется.
    * _Бонусный_ — `Implementor` должен уметь реализовывать _generic_-классы и интерфейсы. Сгенерированный код должен иметь корректные параметры типов и не порождать `UncheckedWarning`.
 
-### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/implementor)
+### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/implementor/Implementor.java)
 
 ## Домашнее задание 5. JarImplementor
 
@@ -113,8 +113,8 @@
    * Запускаемый `.jar-файл` должен принимать те же аргументы командной строки, что и класс `Implementor`.
 2. Модифицируйте `Implemetor` так, что бы при запуске с аргументами `-jar имя-класса файл.jar` он генерировал `.jar-файл` с реализацией соответствующего класса (интерфейса).
 3. Для проверки, кроме исходного кода так же должны быть предъявлены:
-   скрипт для создания запускаемого `.jar-файла`, в том числе, исходный код манифеста;
-   запускаемый .jar-файл.
+   * скрипт для создания запускаемого `.jar-файла`, в том числе, исходный код манифеста;
+   * запускаемый '.jar-файл'.
 4. **Сложный вариант**. Решение должно быть модуляризовано.
 
 ### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/scripts)
