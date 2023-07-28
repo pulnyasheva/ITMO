@@ -76,6 +76,6 @@
     * Применение стандартных коллекций.
     * Избавление от повторяющегося кода.
 
-### [Решение]()
+### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/arrayset)
 
         
