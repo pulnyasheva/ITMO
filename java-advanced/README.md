@@ -53,7 +53,7 @@
                                a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3 samples/123
                                03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4 samples/1234
                                40aff2e9d2d8922e47afd4648e6967497158785fbd1da870e7110266bf944880 samples/binary
-                               0000000000000000000000000000000000000000000000000000000000000000 samples/no-such-file8e8881c5 java/info/kgeorgiy/java/advanced/walk/samples/binary
+                               0000000000000000000000000000000000000000000000000000000000000000 samples/no-such-file
 
 3. При выполнении задания следует обратить внимание на:
    * Дизайн и обработку исключений, диагностику ошибок.
@@ -67,7 +67,7 @@
 
 ### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/walk/Walk.java)
 
-## Домашнее задание 2. ArraySortedSet
+## Домашнее задание 2. Множество на массиве
 
 1. Разработайте класс ArraySet, реализующие неизменяемое упорядоченное множество.
     * Класс `ArraySet` должен реализовывать интерфейс `SortedSet` (простой вариант) или `NavigableSet` (сложный вариант).
@@ -151,3 +151,4 @@
 6. При выполнении задания **нельзя** использовать _Concurrency Utilities_.
 
 ### [Решение](https://github.com/pulnyasheva/ITMO/blob/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/concurrent/IterativeParallelism.java)
+
