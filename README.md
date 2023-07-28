@@ -2,6 +2,7 @@
 
 - [java-advanced](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced)
 - [Лабораторная по булевым функциям]()
+- [Лабораторная по кодированию]()
 - [Лабораторная по комбинаторике]()
 - [Лабораторная по графам](https://github.com/pulnyasheva/ITMO/tree/main/lab-graph)
 - [Лабораторная по конечным автоматам](https://github.com/pulnyasheva/ITMO/tree/main/lab-automat)
