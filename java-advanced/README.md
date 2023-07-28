@@ -152,3 +152,33 @@
 
 ### [Решение](https://github.com/pulnyasheva/ITMO/blob/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/concurrent/IterativeParallelism.java)
 
+## Домашнее задание 8. Паралельный запуск
+
+1. Напишите класс ParallelMapperImpl, реализующий интерфейс `ParallelMapper`
+```Java
+public interface ParallelMapper extends AutoCloseable {
+    <T, R> List<R> map(
+        Function<? super T, ? extends R> f,
+        List<? extends T> args
+    ) throws InterruptedException;
+
+    @Override
+    void close();
+}
+```
+* Метод `map` должен параллельно вычислять функцию _f_ на каждом из указанных аргументов (`args`).
+* Метод `close` должен останавливать все рабочие потоки.
+* Конструктор `ParallelMapperImpl(int threads)` создает `threads` рабочих потоков, которые могут быть использованы для распараллеливания.
+* К одному `ParallelMapperImpl` могут одновременно обращаться несколько клиентов.
+* Задания на исполнение должны накапливаться в очереди и обрабатываться в порядке поступления.
+* В реализации не должно быть активных ожиданий.
+2. Доработайте класс `IterativeParallelism` так, чтобы он мог использовать ParallelMapper.
+   * Добавьте конструктор `IterativeParallelism(ParallelMapper)`
+   * Методы класса должны делить работу на threads фрагментов и исполнять их при помощи `ParallelMapper`.
+   * При наличии ParallelMapper сам `IterativeParallelism` новые потоки создавать не должен.
+   * Должна быть возможность одновременного запуска и работы нескольких клиентов, использующих один ParallelMapper.
+3. При выполнении задания всё ещё **нельзя** использовать _Concurrency Utilities_.
+
+### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/concurrent)
+
+
