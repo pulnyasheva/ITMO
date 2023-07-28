@@ -65,7 +65,7 @@
    * Проверяется исходный код задания.
    * Весь код должен находиться в пакете `info.kgeorgiy.ja.фамилия.walk`.
 
-### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/walk)
+### [Решение]()
 
 ## Домашнее задание 2. ArraySortedSet
 
@@ -76,6 +76,6 @@
     * Применение стандартных коллекций.
     * Избавление от повторяющегося кода.
 
-### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/arrayset)
+### [Решение]()
 
         
