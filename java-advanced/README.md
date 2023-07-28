@@ -302,6 +302,6 @@ public interface ParallelMapper extends AutoCloseable {
 
 ### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/bank)
 
-### [Тесты к курсу и нужные классы (интерфейся)](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/java-advanced-2023)
+### [Тесты к курсу и нужные классы (интерфейсы)](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/java-advanced-2023)
 
 
