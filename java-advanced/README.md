@@ -65,7 +65,7 @@
    * Проверяется исходный код задания.
    * Весь код должен находиться в пакете `info.kgeorgiy.ja.фамилия.walk`.
 
-### [Решение]()
+### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/walk)
 
 ## Домашнее задание 2. ArraySortedSet
 
@@ -76,6 +76,15 @@
     * Применение стандартных коллекций.
     * Избавление от повторяющегося кода.
 
-### [Решение]()
+### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/arrayset)
 
-        
+## Домашнее задание 3. Студенты
+
+1. Разработайте класс `StudentDB`, осуществляющий поиск по базе данных студентов.
+   * Класс `StudentDB` должен реализовывать интерфейс `StudentQuery` (простой вариант) или `GroupQuery` (сложный вариант).
+   * Каждый метод должен состоять из ровно одного оператора. При этом длинные операторы надо разбивать на несколько строк.
+2. При выполнении задания следует обратить внимание на:
+   * Применение лямбда-выражений и потоков.
+   * Избавление от повторяющегося кода.
+
+### [Решение](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced/solutions/info/kgeorgiy/ja/pulnikova/student)
