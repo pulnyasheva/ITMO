@@ -1,6 +1,5 @@
 # ITMO
 
-- [java-advanced](https://github.com/pulnyasheva/ITMO/tree/main/java-advanced)
 - [Лабораторная по булевым функциям](https://github.com/pulnyasheva/ITMO/tree/main/lab-boolean)
 - [Лабораторная по кодированию](https://github.com/pulnyasheva/ITMO/tree/main/lab-coding)
 - [Лабораторная по комбинаторике](https://github.com/pulnyasheva/ITMO/tree/main/lamb-comb)
